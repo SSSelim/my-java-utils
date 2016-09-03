@@ -34,4 +34,17 @@ public class Strings {
 
     return new String(reverseArr);
   }
+
+  //TODO: rewrite it without using toLowerCase
+  //TODO: changing one letter at the time is not a good idea
+  public static String replaceTrLetters(String word) {
+
+    return word.toLowerCase()
+    .replaceAll("ş", "s")
+    .replaceAll("ç", "c")
+    .replaceAll("ğ", "g")
+    .replaceAll("ı", "i")
+    .replaceAll("ö", "o")
+    .replaceAll("ü", "u");
+  }
 }

@@ -13,4 +13,14 @@ public class StringsTest {
     assertTrue(Strings.isPalindrome1("asa"));
     assertFalse(Strings.isPalindrome1("asdaf"));
   }
+
+  @Test
+  public void testReplaceTrLetters(){
+    String turkishLetters = "ç,ı,ş,ğ,ü,ö";
+    assertEquals("c,i,s,g,u,o", Strings.replaceTrLetters(turkishLetters));
+
+    String turkishWord = "Çalışmak";
+    assertEquals("calismak", Strings.replaceTrLetters(turkishWord));
+
+  }
 }
